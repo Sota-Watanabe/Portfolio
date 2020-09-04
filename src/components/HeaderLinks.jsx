@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Grid } from "@material-ui/core";
-import InfoIcon from "@material-ui/icons/Info";
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import EmailIcon from '@material-ui/icons/Email';
