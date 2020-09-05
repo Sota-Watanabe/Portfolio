@@ -10,3 +10,5 @@ Material-UI
 2. github Actionsで自動的にビルドされる.
 3. ビルドの出力はgh-pagesブランチにコミットされる.
 4. github pagesでgh-pagesブランチを登録しているのでビルド出力がそのままデプロイされる形になる.
+### リンター
+eslint, prettier
