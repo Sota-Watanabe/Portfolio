@@ -1,6 +1,6 @@
-import React from 'react';
-import Header from './Header'
-function App() {
+import React from "react";
+import { Header } from "./Header";
+export const App = () => {
   return (
     <>
       <Header />
@@ -31,6 +31,4 @@ function App() {
       <h1> test </h1>
     </>
   );
-}
-
-export default App;
+};
