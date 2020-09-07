@@ -6,14 +6,12 @@ import { HeaderLinks } from "./HeaderLinks";
 
 export const Header = () => {
   return (
-    <div>
-      <AppBar position="fixed" color="default">
-        <Toolbar>
-          <Container maxWidth="sm">
-            <HeaderLinks />
-          </Container>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <AppBar position="sticky" color="default">
+      <Toolbar>
+        <Container maxWidth="sm">
+          <HeaderLinks />
+        </Container>
+      </Toolbar>
+    </AppBar>
   );
 };
