@@ -1,13 +1,12 @@
 import React from "react";
-import { Typography, Box, makeStyles, Paper } from "@material-ui/core";
+import { Typography, Box, makeStyles, Paper, Grid } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  skillsBox: {
     display: "inline-flex",
     overflowX: "scroll",
-    width: "70%",
   },
   stack: {
     backgroundColor: grey[300],
@@ -16,10 +15,6 @@ const useStyles = makeStyles((theme) => ({
     width: "250px",
     margin: "10px",
     textAlign: "center",
-  },
-  section: {
-    backgroundColor: grey[700],
-    padding: "50px 0",
   },
   paper: {
     flexWrap: "nowrap",
@@ -32,11 +27,11 @@ const useStyles = makeStyles((theme) => ({
 export const SkillList = ({ name, list }) => {
   const classes = useStyles();
   return (
-    <>
+    <Grid container justify="center" alignItems="center">
       <Typography variant="h4" className={classes.stackName}>
         {name}
       </Typography>
-      <Box display="inline" className={classes.root}>
+      <Box m={4} className={classes.skillsBox}>
         {list.map((skill) => (
           <Paper
             className={classes.paper}
@@ -53,7 +48,7 @@ export const SkillList = ({ name, list }) => {
           </Paper>
         ))}
       </Box>
-    </>
+    </Grid>
   );
 };
 
