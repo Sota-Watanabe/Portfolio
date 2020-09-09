@@ -3,8 +3,8 @@ import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import { makeStyles, Grid } from "@material-ui/core";
 import grey from "@material-ui/core/colors/grey";
 
-import { SectionLabel } from "./SectionLabel";
-import { SkillList } from "./SkillList";
+import { SectionLabel } from "../components/SectionLabel";
+import { SkillList } from "../components/SkillList";
 import { languages } from "../static/skills/language";
 
 const useStyles = makeStyles((theme) => ({
