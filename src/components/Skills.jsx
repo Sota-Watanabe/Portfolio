@@ -50,6 +50,8 @@ export const Skills = () => {
         className={classes.stack}
       >
         <SkillList name="フロントエンド" list={languages} />
+        <SkillList name="バックエンド" list={languages} />
+        <SkillList name="インフラ" list={languages} />
       </Grid>
     </>
   );

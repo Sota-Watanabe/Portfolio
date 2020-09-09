@@ -13,7 +13,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: grey[300],
   },
   stackName: {
+    width: "250px",
     margin: "10px",
+    textAlign: "center",
   },
   section: {
     backgroundColor: grey[700],
@@ -31,7 +33,7 @@ export const SkillList = ({ name, list }) => {
   const classes = useStyles();
   return (
     <>
-      <Typography variant="h4" display="inline" className={classes.stackName}>
+      <Typography variant="h4" className={classes.stackName}>
         {name}
       </Typography>
       <Box display="inline" className={classes.root}>
