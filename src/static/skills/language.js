@@ -24,4 +24,9 @@ export const languages = [
     imgPath:
       "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
   },
+  {
+    name: "HTML",
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+  },
 ];
