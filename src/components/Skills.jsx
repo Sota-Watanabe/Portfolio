@@ -1,18 +1,11 @@
 import React from "react";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
-import {
-  makeStyles,
-  Box,
-  Paper,
-  Container,
-  Typography,
-  Grid,
-} from "@material-ui/core";
+import { makeStyles, Grid } from "@material-ui/core";
 import grey from "@material-ui/core/colors/grey";
+
 import { SectionLabel } from "./SectionLabel";
-import { languages } from "../static/skills/language";
-import { typography } from "material-ui/styles";
 import { SkillList } from "./SkillList";
+import { languages } from "../static/skills/language";
 
 const useStyles = makeStyles((theme) => ({
   root: {
