@@ -8,26 +8,8 @@ import { SkillList } from "../components/SkillList";
 import { languages } from "../static/skills/language";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "inline-flex",
-    overflowX: "scroll",
-    width: "70%",
-  },
   stack: {
     backgroundColor: grey[300],
-  },
-  stackName: {
-    margin: "10px",
-  },
-  section: {
-    backgroundColor: grey[700],
-    padding: "50px 0",
-  },
-  paper: {
-    flexWrap: "nowrap",
-    transform: "translateZ(0)",
-    maxWidth: "80%",
-    margin: "10px",
   },
 }));
 
