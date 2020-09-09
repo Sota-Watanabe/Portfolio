@@ -15,7 +15,7 @@ import {
 import grey from "@material-ui/core/colors/grey";
 
 import SotaIllust from "../static/images/face_illust.png";
-import { SectionLabel } from "./SectionLabel";
+import { SectionLabel } from "../components/SectionLabel";
 
 const useStyles = makeStyles((theme) => ({
   faceImage: {
