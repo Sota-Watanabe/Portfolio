@@ -1,15 +1,11 @@
 import React from "react";
 import { Typography, Box, makeStyles, Paper, Grid } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
 import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
   skillsBox: {
     display: "inline-flex",
     overflowX: "scroll",
-  },
-  stack: {
-    backgroundColor: grey[300],
   },
   stackName: {
     width: "250px",
