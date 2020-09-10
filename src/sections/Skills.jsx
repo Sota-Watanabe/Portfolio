@@ -6,6 +6,8 @@ import grey from "@material-ui/core/colors/grey";
 import { SectionLabel } from "../components/SectionLabel";
 import { SkillList } from "../components/SkillList";
 import { frontendSkills } from "../data/skills/frontendSkills";
+import { backendSkills } from "../data/skills/backendSkills";
+import { infraSkills } from "../data/skills/infraSkills";
 
 const useStyles = makeStyles((theme) => ({
   stack: {
@@ -25,8 +27,8 @@ export const Skills = () => {
         className={classes.stack}
       >
         <SkillList name="フロントエンド" list={frontendSkills} />
-        <SkillList name="バックエンド" list={frontendSkills} />
-        <SkillList name="インフラ" list={frontendSkills} />
+        <SkillList name="バックエンド" list={backendSkills} />
+        <SkillList name="インフラ&amp;DB" list={infraSkills} />
       </Grid>
     </>
   );
