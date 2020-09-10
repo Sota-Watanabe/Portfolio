@@ -13,11 +13,11 @@ import pictureCollector from "../static/images/picture_collector.png";
 
 const useStyles = makeStyles((theme) => ({
   workCard: {
-    width: "400px",
+    width: "300px",
     margin: "10px",
   },
   media: {
-    height: "200px",
+    height: "150px",
   },
 }));
 
