@@ -1,8 +1,13 @@
 export const frontendSkills = [
   {
-    name: "python",
+    name: "HTML",
     imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+  },
+  {
+    name: "css",
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   },
   {
     name: "javascript",
@@ -10,23 +15,17 @@ export const frontendSkills = [
       "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
-    name: "C言語",
+    name: "React",
     imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
   },
   {
-    name: "java",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    name: "Material-UI",
+    imgPath: "https://material-ui.com/static/logo_raw.svg",
   },
   {
-    name: "go",
+    name: "tailwindcss",
     imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
-  },
-  {
-    name: "HTML",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+      "https://tailwindcss.com/_next/static/media/twitter-square.18b32c43e6fa4c8ee7db66330112a331.png",
   },
 ];
