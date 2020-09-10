@@ -14,7 +14,6 @@ import {
 } from "@material-ui/core";
 import grey from "@material-ui/core/colors/grey";
 
-import SotaIllust from "../static/images/face_illust.png";
 import { SectionLabel } from "../components/SectionLabel";
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +50,11 @@ export const About = () => {
         alignItems="center"
         className={classes.section}
       >
-        <Avatar alt="Sota" src={SotaIllust} className={classes.faceImage} />
+        <Avatar
+          alt="Sota"
+          src={`${process.env.PUBLIC_URL}/images/face_illust.png`}
+          className={classes.faceImage}
+        />
         <Box m={4} my={8}>
           <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="simple table">
