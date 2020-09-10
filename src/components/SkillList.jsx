@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     flexWrap: "nowrap",
     transform: "translateZ(0)",
-    height: "100px",
+    maxWidth: "80%",
     margin: "10px",
   },
 }));

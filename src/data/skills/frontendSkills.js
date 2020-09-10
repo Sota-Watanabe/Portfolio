@@ -7,7 +7,7 @@ export const frontendSkills = [
   {
     name: "javascript",
     imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
     name: "C言語",
