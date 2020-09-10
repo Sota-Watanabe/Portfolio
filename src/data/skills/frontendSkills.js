@@ -1,4 +1,4 @@
-export const languages = [
+export const frontendSkills = [
   {
     name: "python",
     imgPath:

@@ -1,24 +1,60 @@
 import React from "react";
-import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
-import { makeStyles } from "@material-ui/core";
-import grey from "@material-ui/core/colors/grey";
+import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
+import {
+  makeStyles,
+  Box,
+  Card,
+  CardActionArea,
+  CardMedia,
+  CardContent,
+  Typography,
+} from "@material-ui/core";
 
 import { SectionLabel } from "../components/SectionLabel";
-import { Productions } from "../components/Productions";
+import { worksData } from "../data/works/worksData";
 
 const useStyles = makeStyles((theme) => ({
-  stack: {
-    backgroundColor: grey[300],
+  workCard: {
+    width: "300px",
+    margin: "10px",
+  },
+  media: {
+    height: "150px",
   },
 }));
 
 export const Works = () => {
-  // eslint-disable-next-line no-unused-vars
   const classes = useStyles();
   return (
     <>
-      <SectionLabel Icon={FitnessCenterIcon} text="SKILLS" />
-      <Productions />
+      <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
+      <Box
+        m="auto"
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        maxWidth="1024px"
+      >
+        {worksData.map((work) => (
+          <Card className={classes.workCard} key={work.name}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={`${process.env.PUBLIC_URL}${work.imgPath}`}
+                title={work.name}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {work.name}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {work.description}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        ))}
+      </Box>
     </>
   );
 };
