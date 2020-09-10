@@ -28,7 +28,13 @@ export const Works = () => {
   return (
     <>
       <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
-      <Box m={4} display="flex" flexWrap="wrap" justifyContent="center">
+      <Box
+        m="auto"
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        maxWidth="1024px"
+      >
         {worksData.map((work) => (
           <Card className={classes.workCard} key={work.name}>
             <CardActionArea>
