@@ -4,6 +4,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { KeyVisual } from "../sections/KeyVisual";
 import { About } from "../sections/About";
 import { Skills } from "../sections/Skills";
+import { Works } from "../sections/Works";
 export const Main = () => {
   return (
     <>
@@ -12,6 +13,7 @@ export const Main = () => {
       <KeyVisual />
       <About />
       <Skills />
+      <Works />
     </>
   );
 };
