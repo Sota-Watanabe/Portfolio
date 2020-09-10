@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Works = () => {
-  // eslint-disable-next-line no-unused-vars
   const classes = useStyles();
   return (
     <>
