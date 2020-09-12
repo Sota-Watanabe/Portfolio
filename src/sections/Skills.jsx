@@ -1,6 +1,6 @@
 import React from "react";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
-import { makeStyles, Grid } from "@material-ui/core";
+import { makeStyles, Grid, Box } from "@material-ui/core";
 import grey from "@material-ui/core/colors/grey";
 
 import { SectionLabel } from "../components/SectionLabel";
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export const Skills = () => {
   const classes = useStyles();
   return (
-    <>
+    <Box id="skills">
       <SectionLabel Icon={FitnessCenterIcon} text="SKILLS" />
       <Grid
         container
@@ -30,6 +30,6 @@ export const Skills = () => {
         <SkillList name="バックエンド" list={backendSkills} />
         <SkillList name="インフラ&amp;DB" list={infraSkills} />
       </Grid>
-    </>
+    </Box>
   );
 };

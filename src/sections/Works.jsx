@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   return (
-    <>
+    <Box id="works">
       <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
       <Box
         m="auto"
@@ -55,6 +55,6 @@ export const Works = () => {
           </Card>
         ))}
       </Box>
-    </>
+    </Box>
   );
 };
