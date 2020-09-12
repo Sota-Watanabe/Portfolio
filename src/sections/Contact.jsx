@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 export const Contact = () => {
   const classes = useStyles();
   return (
-    <>
+    <Box id="contact">
       <SectionLabel Icon={EmailIcon} text="CONTACT" />
       <Grid
         container
@@ -27,6 +27,6 @@ export const Contact = () => {
           <Typography variant="h3">現在制作中</Typography>
         </Box>
       </Grid>
-    </>
+    </Box>
   );
 };

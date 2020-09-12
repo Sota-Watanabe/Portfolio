@@ -42,7 +42,7 @@ const profileData = [
 export const About = () => {
   const classes = useStyles();
   return (
-    <>
+    <Box id="about">
       <SectionLabel Icon={EmojiPeopleIcon} text="ABOUT" />
       <Grid
         container
@@ -72,6 +72,6 @@ export const About = () => {
           </TableContainer>
         </Box>
       </Grid>
-    </>
+    </Box>
   );
 };
