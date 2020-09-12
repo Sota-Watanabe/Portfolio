@@ -5,6 +5,7 @@ import { KeyVisual } from "../sections/KeyVisual";
 import { About } from "../sections/About";
 import { Skills } from "../sections/Skills";
 import { Works } from "../sections/Works";
+import { Contact } from "../sections/Contact";
 export const Main = () => {
   return (
     <>
@@ -14,6 +15,7 @@ export const Main = () => {
       <About />
       <Skills />
       <Works />
+      <Contact />
     </>
   );
 };
