@@ -23,6 +23,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const onClickCard = (event) => {
+  const cardIndex = event.currentTarget.getAttribute("index");
+  console.log(cardIndex);
+};
+
 export const Works = () => {
   const classes = useStyles();
   return (
@@ -35,8 +40,13 @@ export const Works = () => {
         justifyContent="center"
         maxWidth="1024px"
       >
-        {worksData.map((work) => (
-          <Card className={classes.workCard} key={work.name}>
+        {worksData.map((work, index) => (
+          <Card
+            className={classes.workCard}
+            index={index}
+            key={work.name}
+            onClick={onClickCard}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
