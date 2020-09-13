@@ -6,6 +6,7 @@ import { About } from "../sections/About";
 import { Skills } from "../sections/Skills";
 import { Works } from "../sections/Works";
 import { Contact } from "../sections/Contact";
+import { Footer } from "../sections/Footer";
 export const Main = () => {
   return (
     <>
@@ -16,6 +17,7 @@ export const Main = () => {
       <Skills />
       <Works />
       <Contact />
+      <Footer />
     </>
   );
 };
