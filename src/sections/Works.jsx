@@ -10,9 +10,6 @@ import {
   Typography,
   Slide,
   Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
   DialogActions,
   Button,
 } from "@material-ui/core";
@@ -95,7 +92,11 @@ export const Works = () => {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <img width="100%" src={cardDetailData.imgPath} />
+        <img
+          width="100%"
+          src={cardDetailData.imgPath}
+          alt={cardDetailData.name}
+        />
         <Typography>{cardDetailData.name}</Typography>
         <Typography>{cardDetailData.description}</Typography>
         <DialogActions>
