@@ -38,7 +38,6 @@ export const Contact = () => {
             src="https://docs.google.com/forms/d/e/1FAIpQLSeaUGVz2LvOh4IJ8EQNQsPr_S7ULdTzev7ER5EBBBsVUNs4hg/viewform?embedded=true"
             width="100%"
             height="1000"
-            backgroundcolor="white"
             frameBorder="0"
             title="Contact Us"
           >
