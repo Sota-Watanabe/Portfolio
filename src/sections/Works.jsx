@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, forwardRef } from "react";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import {
   makeStyles,
@@ -8,6 +8,10 @@ import {
   CardMedia,
   CardContent,
   Typography,
+  Slide,
+  Dialog,
+  DialogActions,
+  Button,
 } from "@material-ui/core";
 
 import { SectionLabel } from "../components/SectionLabel";
@@ -23,8 +27,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const Transition = forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 export const Works = () => {
+  const [openDetail, setOpenDetail] = useState(false);
+  const [cardIndex, setCardIndex] = useState(0);
+
+  const handleClickOpenDetail = (event) => {
+    const cardIndex = event.currentTarget.getAttribute("index");
+    console.log(cardIndex);
+    setCardIndex(cardIndex);
+    setOpenDetail(true);
+  };
+
+  const handleClose = () => {
+    setOpenDetail(false);
+  };
+
   const classes = useStyles();
+  const cardDetailData = worksData[cardIndex];
   return (
     <Box id="works">
       <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
@@ -35,8 +58,13 @@ export const Works = () => {
         justifyContent="center"
         maxWidth="1024px"
       >
-        {worksData.map((work) => (
-          <Card className={classes.workCard} key={work.name}>
+        {worksData.map((work, index) => (
+          <Card
+            className={classes.workCard}
+            index={index}
+            key={work.name}
+            onClick={handleClickOpenDetail}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -55,6 +83,28 @@ export const Works = () => {
           </Card>
         ))}
       </Box>
+      {/* 以下はポップアップ */}
+      <Dialog
+        open={openDetail}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <img
+          width="100%"
+          src={cardDetailData.imgPath}
+          alt={cardDetailData.name}
+        />
+        <Typography>{cardDetailData.name}</Typography>
+        <Typography>{cardDetailData.description}</Typography>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            閉じる
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };
