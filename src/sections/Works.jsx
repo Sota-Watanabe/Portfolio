@@ -37,7 +37,6 @@ export const Works = () => {
 
   const handleClickOpenDetail = (event) => {
     const cardIndex = event.currentTarget.getAttribute("index");
-    console.log(cardIndex);
     setCardIndex(cardIndex);
     setOpenDetail(true);
   };
