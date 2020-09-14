@@ -7,12 +7,13 @@ export const worksData = [
     labels: ["React", "electron", "tailwind.css", "Team"],
     period: "5month",
     github: "https://github.com/cdlab-sit/XenonText",
+    blog: "https://blog.so-ta.net/category/xenontext/",
   },
   {
     name: "ピクコレ",
     imgPath: "images/picture_collector.png",
     description:
-      "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.",
+      "Picture-Collector(ピクチャーコレクター)、通称ピクコレです。\nこれは自分以外の人と簡単に画像を共有することができるサービスです。Slackbotであるピクコレに画像をアップロードすると、ピクコレを起動しているサーバに画像が保存されます。画像が保存されるディレクリをフォトフレームスライドショーの対象ディレクトリにすることで画像をスライドショーとして楽しめます。これを研究室などのディスプレイに接続することで自分の趣味などを共有することができます。",
     labels: ["python", "flask", "slackbot", "RaspberryPi", "Personal"],
     period: "1week",
     github: "https://github.com/Sota-Watanabe/picture-collector",
@@ -21,7 +22,7 @@ export const worksData = [
     name: "BBDC",
     imgPath: "images/moguchan.png",
     description:
-      "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.aaaaaa",
+      "大学のオープンキャンパスで制作したものです。先輩から仕様書っぽいものをもらい、それを元に制作しました。コンセプトは...",
     labels: ["python", "flask", "javascript", "HTML", "CSS", "Team"],
     period: "1month",
     github: "https://github.com/cdlab-sit/BBDC",
@@ -40,14 +41,16 @@ export const worksData = [
     ],
     period: "2weeks",
     github: "https://github.com/Sota-Watanabe/Portfolio",
+    blog: "https://blog.so-ta.net/category/portfolio/",
   },
   {
     name: "キーボード",
     imgPath: "images/keyboard.png",
     description:
-      "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され, デジタルフォトフレームのスライドショーに追加される.aaaaaa",
+      "これはパソコンのキーボードを押すと、ピアノのキーボードが動くという作品です。大学でDisklavierという自動演奏ピアノを使って何かを作れと言われてので作ってみました。midi信号をピアノに送ってピアノを動かしています。詳細はブログとGitHubの方に書きましたのでどうぞご覧ください。",
     labels: ["python", "flask", "midi", "piano", "Personal"],
     period: "1week",
+    blog: "https://blog.so-ta.net/play/pc-keyboard-piano/",
     github: "https://github.com/Sota-Watanabe/keyboard",
   },
 ];

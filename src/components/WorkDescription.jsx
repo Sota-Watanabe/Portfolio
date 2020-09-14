@@ -1,9 +1,23 @@
 import React from "react";
-import { Typography, Box, IconButton } from "@material-ui/core";
+import {
+  Typography,
+  Box,
+  IconButton,
+  makeStyles,
+  Tooltip,
+} from "@material-ui/core";
 import PropTypes from "prop-types";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
+
+const useStyles = makeStyles((theme) => ({
+  customTooltip: {
+    fontSize: "15px",
+  },
+}));
 
 export const WorkDescription = ({ data }) => {
+  const classes = useStyles();
   return (
     <Box mx={3}>
       <Typography variant="h4">{data.name}</Typography>
@@ -19,9 +33,28 @@ export const WorkDescription = ({ data }) => {
         </Typography>
       ))}
       <Box textAlign="center">
-        <IconButton component="a" href={data.github} target="_blank">
-          <GitHubIcon />
-        </IconButton>
+        {data.github && (
+          <Tooltip
+            classes={{ tooltip: classes.customTooltip }}
+            title="GitHub"
+            arrow
+          >
+            <IconButton component="a" href={data.github} target="_blank">
+              <GitHubIcon />
+            </IconButton>
+          </Tooltip>
+        )}
+        {data.blog && (
+          <Tooltip
+            classes={{ tooltip: classes.customTooltip }}
+            title="Blog"
+            arrow
+          >
+            <IconButton component="a" href={data.blog} target="_blank">
+              <LibraryBooksIcon />
+            </IconButton>
+          </Tooltip>
+        )}
       </Box>
     </Box>
   );
