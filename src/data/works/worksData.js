@@ -46,7 +46,7 @@ export const worksData = [
     imgPath: "images/keyboard.png",
     description:
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され, デジタルフォトフレームのスライドショーに追加される.aaaaaa",
-    labels: ["python", "flask", "midi", "Personal"],
+    labels: ["python", "flask", "midi", "piano", "Personal"],
     period: "1week",
     github: "https://github.com/Sota-Watanabe/keyboard",
   },
