@@ -12,6 +12,7 @@ import {
   Dialog,
   DialogActions,
   Button,
+  Chip,
 } from "@material-ui/core";
 
 import { SectionLabel } from "../components/SectionLabel";
@@ -24,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: "150px",
+  },
+  chip: {
+    margin: theme.spacing(0.5),
   },
 }));
 
@@ -74,9 +78,11 @@ export const Works = () => {
                 <Typography gutterBottom variant="h5" component="h2">
                   {work.name}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {work.description}
-                </Typography>
+                <Box>
+                  {work.labels.map((label) => (
+                    <Chip className={classes.chip} label={label} key={label} />
+                  ))}
+                </Box>
               </CardContent>
             </CardActionArea>
           </Card>
