@@ -10,8 +10,6 @@ import {
   Typography,
   Slide,
   Dialog,
-  DialogActions,
-  Button,
   Chip,
   IconButton,
 } from "@material-ui/core";
@@ -134,11 +132,6 @@ export const Works = () => {
             </IconButton>
           </Box>
         </Box>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            閉じる
-          </Button>
-        </DialogActions>
       </Dialog>
     </Box>
   );
