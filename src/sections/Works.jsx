@@ -11,12 +11,13 @@ import {
   Slide,
   Dialog,
   Chip,
-  IconButton,
+  DialogActions,
+  Button,
 } from "@material-ui/core";
-import GitHubIcon from "@material-ui/icons/GitHub";
 
 import { SectionLabel } from "../components/SectionLabel";
 import { worksData } from "../data/works/worksData";
+import { WorkDescription } from "../components/WorkDescription";
 
 const useStyles = makeStyles((theme) => ({
   workCard: {
@@ -107,31 +108,10 @@ export const Works = () => {
           src={cardDetailData.imgPath}
           alt={cardDetailData.name}
         />
-        <Box mx={3}>
-          <Typography variant="h4">{cardDetailData.name}</Typography>
-          <Typography>{cardDetailData.description}</Typography>
-          <Typography>開発期間</Typography>
-          {cardDetailData.period}
-          <Typography>使用技術</Typography>
-          {cardDetailData.labels.map((label) => (
-            <Chip
-              variant="outlined"
-              className={classes.chip}
-              label={label}
-              key={label}
-            />
-          ))}
-          <Box textAlign="center">
-            <IconButton
-              className={classes.iconButton}
-              component="a"
-              href={cardDetailData.github}
-              target="_blank"
-            >
-              <GitHubIcon />
-            </IconButton>
-          </Box>
-        </Box>
+        <WorkDescription data={cardDetailData} />
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
       </Dialog>
     </Box>
   );
