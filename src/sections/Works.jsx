@@ -20,11 +20,11 @@ import { worksData } from "../data/works/worksData";
 
 const useStyles = makeStyles((theme) => ({
   workCard: {
-    width: "300px",
-    margin: "10px",
+    width: "330px",
+    margin: "5px",
   },
   media: {
-    height: "150px",
+    height: "180px",
   },
   chip: {
     margin: theme.spacing(0.5),

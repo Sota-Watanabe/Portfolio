@@ -4,27 +4,42 @@ export const worksData = [
     imgPath: "images/picture_collector.png",
     description:
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.",
-    labels: ["python", "flask", "slackbot", "personal"],
+    labels: ["python", "flask", "slackbot", "Personal"],
+    period: "1week",
+    github: "https://github.com/Sota-Watanabe/picture-collector",
   },
   {
-    name: "ピクコレa",
-    imgPath: "images/face_illust.png",
+    name: "BBDC",
+    imgPath: "images/moguchan.png",
     description:
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.aaaaaa",
-    labels: ["python", "flask", "slackbot"],
+    labels: ["python", "flask", "javascript", "HTML", "CSS", "Team"],
   },
   {
-    name: "ピクコレb",
-    imgPath: "images/face_illust.png",
+    name: "XenonText",
+    imgPath: "images/xenontext.png",
     description:
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.aaaaaa",
-    labels: ["python", "flask", "slackbot"],
+    labels: ["React", "electron", "tailwind.css", "Team"],
   },
   {
-    name: "ピクコレc",
-    imgPath: "images/face_illust.png",
+    name: "自作ポートフォリオ",
+    imgPath: "images/portfolio.png",
     description:
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.aaaaaa",
-    labels: ["python", "flask", "slackbot"],
+    labels: [
+      "React",
+      "Material-UI",
+      "Github Pages",
+      "Github Actions",
+      "Personal",
+    ],
+  },
+  {
+    name: "キーボード",
+    imgPath: "images/keyboard.png",
+    description:
+      "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され,デジタルフォトフレームのスライドショーに追加される.aaaaaa",
+    labels: ["python", "flask", "midi", "Personal"],
   },
 ];
