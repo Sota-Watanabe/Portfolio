@@ -21,7 +21,6 @@ import { worksData } from "../data/works/worksData";
 const useStyles = makeStyles((theme) => ({
   workCard: {
     width: "330px",
-    // height: "200px",
     margin: "5px",
   },
   media: {
@@ -60,7 +59,7 @@ export const Works = () => {
         display="flex"
         flexWrap="wrap"
         justifyContent="center"
-        // maxWidth="1024px"
+        maxWidth="1024px"
       >
         {worksData.map((work, index) => (
           <Card
