@@ -48,6 +48,6 @@ export const worksData = [
       "ゴールデンウィークに作ったもの. 作った slack bot に画像をアップロードすると サーバに保存され, デジタルフォトフレームのスライドショーに追加される.aaaaaa",
     labels: ["python", "flask", "midi", "Personal"],
     period: "1week",
-    github: "https://github.com/Sota-Watanabe/keyborad",
+    github: "https://github.com/Sota-Watanabe/keyboard",
   },
 ];
