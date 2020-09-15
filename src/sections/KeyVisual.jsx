@@ -60,7 +60,7 @@ export const KeyVisual = () => {
         >
           <IconButton
             component="a"
-            href="http://blog.so-ta.net"
+            href="https://twitter.com/CsJanuAP1D1oSjW"
             target="_blank"
           >
             <TwitterIcon fontSize="large" />
