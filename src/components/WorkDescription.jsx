@@ -1,23 +1,12 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  IconButton,
-  makeStyles,
-  Tooltip,
-} from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
 import PropTypes from "prop-types";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
-
-const useStyles = makeStyles((theme) => ({
-  customTooltip: {
-    fontSize: "15px",
-  },
-}));
+import WebIcon from "@material-ui/icons/Web";
+import { IconLink } from "./IconLink";
 
 export const WorkDescription = ({ data }) => {
-  const classes = useStyles();
   return (
     <Box mx={3}>
       <Typography variant="h4">{data.name}</Typography>
@@ -34,26 +23,14 @@ export const WorkDescription = ({ data }) => {
       ))}
       <Box textAlign="center">
         {data.github && (
-          <Tooltip
-            classes={{ tooltip: classes.customTooltip }}
-            title="GitHub"
-            arrow
-          >
-            <IconButton component="a" href={data.github} target="_blank">
-              <GitHubIcon />
-            </IconButton>
-          </Tooltip>
+          <IconLink Icon={GitHubIcon} title="GitHub" link={data.github} />
         )}
+
         {data.blog && (
-          <Tooltip
-            classes={{ tooltip: classes.customTooltip }}
-            title="Blog"
-            arrow
-          >
-            <IconButton component="a" href={data.blog} target="_blank">
-              <LibraryBooksIcon />
-            </IconButton>
-          </Tooltip>
+          <IconLink Icon={LibraryBooksIcon} title="Blog" link={data.blog} />
+        )}
+        {data.website && (
+          <IconLink Icon={WebIcon} title="website" link={data.website} />
         )}
       </Box>
     </Box>
