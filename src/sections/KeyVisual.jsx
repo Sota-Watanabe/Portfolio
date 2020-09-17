@@ -1,23 +1,11 @@
 import React from "react";
-import {
-  Grid,
-  Typography,
-  Box,
-  Tooltip,
-  IconButton,
-  makeStyles,
-} from "@material-ui/core";
+import { Grid, Typography, Box } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import TwitterIcon from "@material-ui/icons/Twitter";
-const useStyles = makeStyles((theme) => ({
-  customTooltip: {
-    fontSize: "15px",
-  },
-}));
+import { IconLink } from "../components/IconLink";
 
 export const KeyVisual = () => {
-  const classes = useStyles();
   return (
     <Box>
       <Box my={10}>
@@ -27,45 +15,21 @@ export const KeyVisual = () => {
         </Grid>
       </Box>
       <Grid container justify="center">
-        <Tooltip
-          classes={{ tooltip: classes.customTooltip }}
+        <IconLink
+          Icon={GitHubIcon}
           title="GitHub"
-          arrow
-        >
-          <IconButton
-            component="a"
-            href="http://github.com/sota-watanabe"
-            target="_blank"
-          >
-            <GitHubIcon fontSize="large" />
-          </IconButton>
-        </Tooltip>
-        <Tooltip
-          classes={{ tooltip: classes.customTooltip }}
+          link="https://github.com/sota-watanabe"
+        />
+        <IconLink
+          Icon={LibraryBooksIcon}
           title="Blog"
-          arrow
-        >
-          <IconButton
-            component="a"
-            href="http://blog.so-ta.net"
-            target="_blank"
-          >
-            <LibraryBooksIcon fontSize="large" />
-          </IconButton>
-        </Tooltip>
-        <Tooltip
-          classes={{ tooltip: classes.customTooltip }}
+          link="http://blog.so-ta.net"
+        />
+        <IconLink
+          Icon={TwitterIcon}
           title="Twitter"
-          arrow
-        >
-          <IconButton
-            component="a"
-            href="https://twitter.com/Sota___Watanabe"
-            target="_blank"
-          >
-            <TwitterIcon fontSize="large" />
-          </IconButton>
-        </Tooltip>
+          link="https://twitter.com/Sota___Watanabe"
+        />
       </Grid>
     </Box>
   );
