@@ -8,15 +8,7 @@ export const worksData = [
     period: "ver0.1がリリース! 現在も機能追加のため開発中!",
     github: "https://github.com/cdlab-sit/XenonText",
     blog: "https://blog.so-ta.net/category/xenontext/",
-  },
-  {
-    name: "ピクコレ",
-    imgPath: "images/picture_collector.png",
-    description:
-      "Picture-Collector(ピクチャーコレクター)、通称ピクコレです。\nこれは自分以外の人と簡単に画像を共有することができるサービスです。Slackbotであるピクコレに画像をアップロードすると、ピクコレを起動しているサーバに画像が保存されます。画像が保存されるディレクリをフォトフレームスライドショーの対象ディレクトリにすることで画像をスライドショーとして楽しめます。これを研究室などのディスプレイに接続することで自分の趣味などを共有することができます。",
-    labels: ["python", "flask", "slackbot", "RaspberryPi", "Personal"],
-    period: "1week",
-    github: "https://github.com/Sota-Watanabe/picture-collector",
+    website: "https://cdlab-sit.github.io/XenonText/",
   },
   {
     name: "BBDC",
@@ -26,6 +18,7 @@ export const worksData = [
     labels: ["python", "flask", "javascript", "HTML", "CSS", "Team"],
     period: "1month",
     github: "https://github.com/cdlab-sit/BBDC",
+    website: "https://cdlab-sit.github.io/BBDC/templates/description.html",
   },
   {
     name: "自作ポートフォリオ",
@@ -42,6 +35,15 @@ export const worksData = [
     period: "3weeks",
     github: "https://github.com/Sota-Watanabe/Portfolio",
     blog: "https://blog.so-ta.net/category/portfolio/",
+  },
+  {
+    name: "ピクコレ",
+    imgPath: "images/picture_collector.png",
+    description:
+      "Picture-Collector(ピクチャーコレクター)、通称ピクコレです。\nこれは自分以外の人と簡単に画像を共有することができるサービスです。Slackbotであるピクコレに画像をアップロードすると、ピクコレを起動しているサーバに画像が保存されます。画像が保存されるディレクリをフォトフレームスライドショーの対象ディレクトリにすることで画像をスライドショーとして楽しめます。これを研究室などのディスプレイに接続することで自分の趣味などを共有することができます。",
+    labels: ["python", "flask", "slackbot", "RaspberryPi", "Personal"],
+    period: "1week",
+    github: "https://github.com/Sota-Watanabe/picture-collector",
   },
   {
     name: "キーボード",
