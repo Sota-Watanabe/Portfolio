@@ -21,7 +21,7 @@ export const worksData = [
     website: "https://cdlab-sit.github.io/BBDC/templates/description.html",
   },
   {
-    name: "自作ポートフォリオ",
+    name: "ポートフォリオ",
     imgPath: "images/portfolio.png",
     description:
       "このサイトです。\n同じ研究室の先輩がポートフォリオを作成していて、かっけえと思ったので作成してみました。今まで開発物のデザインは仲間に任せていたのですが、今回は自分の力だけで作ろうと思ったので、全て自分で制作しました。\nまたCI/CDもちゃんとしようということで初めて GitHub Pages、GitHub Actions を利用しました。\n加えて以前から使ってみたかったMaterial-UI にも挑戦してみました。\n自分を表現するものを制作するのはとても楽しかったです。",

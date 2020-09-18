@@ -76,7 +76,7 @@ export const Works = () => {
                 title={work.name}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="h3" gutterBottom>
                   {work.name}
                 </Typography>
                 <Box>
@@ -103,11 +103,6 @@ export const Works = () => {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <img
-          width="100%"
-          src={cardDetailData.imgPath}
-          alt={cardDetailData.name}
-        />
         <WorkDescription data={cardDetailData} />
         <DialogActions>
           <Button onClick={handleClose}>Close</Button>

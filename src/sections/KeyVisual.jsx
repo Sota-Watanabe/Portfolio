@@ -10,8 +10,8 @@ export const KeyVisual = () => {
     <Box>
       <Box my={10}>
         <Grid container alignItems="center" justify="center">
-          <Typography variant="h2">そーたの</Typography>
-          <Typography variant="h2">Portfolio</Typography>
+          <Typography variant="h1">そーたの</Typography>
+          <Typography variant="h1">Portfolio</Typography>
         </Grid>
       </Box>
       <Grid container justify="center">
