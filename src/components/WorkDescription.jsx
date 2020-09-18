@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
       borderTop: "1px solid",
       content: '""',
       width: "1em",
-      marginLeft: "1em",
+      marginLeft: "0.5em",
     },
     "&:before": {
       borderTop: "1px solid",
       content: '""',
       width: "1em",
-      marginRight: "1em",
+      marginRight: "0.5em",
     },
   },
   heading: {
