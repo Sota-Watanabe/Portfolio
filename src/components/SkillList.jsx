@@ -26,7 +26,7 @@ export const SkillList = ({ name, list }) => {
   const classes = useStyles();
   return (
     <Grid container justify="center" alignItems="center">
-      <Typography variant="h4" className={classes.stackName}>
+      <Typography variant="h2" className={classes.stackName}>
         {name}
       </Typography>
       <Box m={4} display="flex" className={classes.skillsBox}>

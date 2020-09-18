@@ -7,7 +7,7 @@ export const SectionLabel = ({ Icon, text }) => {
     <Box m={10} mb={5}>
       <Grid m={2} container justify="center">
         <Icon m={10} style={{ fontSize: 50 }} />
-        <Typography variant="h4">{text}</Typography>
+        <Typography variant="h2">{text}</Typography>
       </Grid>
     </Box>
   );

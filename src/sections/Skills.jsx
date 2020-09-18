@@ -26,9 +26,9 @@ export const Skills = () => {
         alignItems="center"
         className={classes.stack}
       >
-        <SkillList name="フロントエンド" list={frontendSkills} />
-        <SkillList name="バックエンド" list={backendSkills} />
-        <SkillList name="インフラ&amp;DB" list={infraSkills} />
+        <SkillList name="Front-end" list={frontendSkills} />
+        <SkillList name="Back-end" list={backendSkills} />
+        <SkillList name="Infra&amp;DB" list={infraSkills} />
       </Grid>
     </Box>
   );

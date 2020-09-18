@@ -20,7 +20,7 @@ export const HeaderLinks = () => {
           size="large"
           startIcon={<EmojiPeopleIcon />}
         >
-          about
+          ABOUT
         </Button>
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
@@ -34,7 +34,7 @@ export const HeaderLinks = () => {
           size="large"
           startIcon={<FitnessCenterIcon />}
         >
-          skills
+          SKILLS
         </Button>
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
@@ -48,7 +48,7 @@ export const HeaderLinks = () => {
           size="large"
           startIcon={<AssignmentTurnedInIcon />}
         >
-          works
+          WORKS
         </Button>
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
@@ -62,7 +62,7 @@ export const HeaderLinks = () => {
           size="large"
           startIcon={<EmailIcon />}
         >
-          contact
+          CONTACT
         </Button>
       </Grid>
     </Grid>
