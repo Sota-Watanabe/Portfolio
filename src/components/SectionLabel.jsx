@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 
 export const SectionLabel = ({ Icon, text }) => {
   return (
-    <Box m={10} mb={5}>
+    <Box my={5}>
       <Grid m={2} container justify="center">
-        <Icon m={10} style={{ fontSize: 50 }} />
+        <Icon style={{ fontSize: 50 }} />
+        <Box m={0.5} />
         <Typography variant="h2">{text}</Typography>
       </Grid>
     </Box>
