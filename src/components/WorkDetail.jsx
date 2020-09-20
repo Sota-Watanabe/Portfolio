@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const WorkDescription = ({ data }) => {
+export const WorkDetail = ({ data }) => {
   const classes = useStyles();
   return (
     <Grid container spaceing={1}>
@@ -87,6 +87,6 @@ export const WorkDescription = ({ data }) => {
   );
 };
 
-WorkDescription.propTypes = {
+WorkDetail.propTypes = {
   data: PropTypes.object,
 };
