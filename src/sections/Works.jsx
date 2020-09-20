@@ -99,7 +99,6 @@ export const Works = () => {
         maxWidth="xl"
         open={openDetail}
         TransitionComponent={Transition}
-        keepMounted
         onClose={handleClose}
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
