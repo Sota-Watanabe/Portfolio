@@ -23,7 +23,7 @@ const theme = createMuiTheme({
       fontSize: "20px",
     },
     body1: {
-      fontSize: "15px",
+      fontSize: "16px",
       letterSpacing: "0.1em",
     },
   },
