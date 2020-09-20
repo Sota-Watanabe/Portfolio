@@ -78,7 +78,7 @@ export const WorkDescription = ({ data }) => {
           </Box>
         </Box>
       </Grid>
-      <Grid item md={6} alignContent="center">
+      <Grid item md={6}>
         <Box my={10}>
           <img width="100%" height="auto" src={data.imgPath} alt={data.name} />
         </Box>
