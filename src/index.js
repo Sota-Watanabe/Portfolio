@@ -27,7 +27,8 @@ const theme = createMuiTheme({
       textTransform: "none",
     },
     h1: {
-      fontSize: "60px",
+      fontSize: "14vw",
+      fontFamily: "Kaushan Script",
     },
     h2: {
       fontSize: "40px",

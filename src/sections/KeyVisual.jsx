@@ -18,8 +18,7 @@ export const KeyVisual = () => {
       color="primary"
       className={classes.root}
     >
-      <Typography variant="h1">&nbsp;Sota&nbsp;</Typography>
-      <Typography variant="h1">Watanabe.</Typography>
+      <Typography variant="h1">Sota Watanabe.</Typography>
     </Grid>
   );
 };
