@@ -10,15 +10,15 @@ const theme = createMuiTheme({
     type: "light",
     // type: "dark",
     primary: {
+      main: grey[800],
+      dark: grey[900],
+      light: grey[500],
+      black: "black",
+    },
+    secondary: {
       main: grey[50],
       light: grey[900],
       dark: pink[300],
-    },
-    secondary: {
-      main: grey[800],
-      dark: grey[900],
-      light: grey[700],
-      black: "black",
     },
   },
   typography: {

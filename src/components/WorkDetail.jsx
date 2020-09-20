@@ -49,10 +49,10 @@ export const WorkDetail = ({ data }) => {
           </Box>
           <Box my={2}>
             <DetailHeader MainTitle="Period" subTitle="制作期間" />
-            {data.period}
+            <Typography>{data.period}</Typography>
           </Box>
           <Box>
-            <DetailHeader MainTitle="Keyword" subTitle="使用技術など" />
+            <DetailHeader MainTitle="Keyword" subTitle="使用技術" />
             {data.labels.map((label) => (
               <Typography display="inline" key={label}>
                 {label}{" "}
