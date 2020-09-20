@@ -12,19 +12,13 @@ import {
   Paper,
   TableCell,
 } from "@material-ui/core";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import { IconLink } from "../components/IconLink";
 import { SectionLabel } from "../components/SectionLabel";
+import { AboutLinks } from "./AboutLinks";
 
 const useStyles = makeStyles((theme) => ({
   faceImage: {
     width: "200px",
     height: "200px",
-  },
-  section: {
-    padding: "50px 0",
   },
 }));
 
@@ -45,23 +39,6 @@ export const About = () => {
   return (
     <Box id="about">
       <SectionLabel Icon={EmojiPeopleIcon} text="ABOUT" />
-      <Grid container justify="center">
-        <IconLink
-          Icon={GitHubIcon}
-          title="GitHub"
-          link="https://github.com/sota-watanabe"
-        />
-        <IconLink
-          Icon={LibraryBooksIcon}
-          title="Blog"
-          link="http://blog.so-ta.net"
-        />
-        <IconLink
-          Icon={TwitterIcon}
-          title="Twitter"
-          link="https://twitter.com/Sota___Watanabe"
-        />
-      </Grid>
       <Grid
         container
         justify="center"
@@ -90,6 +67,7 @@ export const About = () => {
           </TableContainer>
         </Box>
       </Grid>
+      <AboutLinks />
     </Box>
   );
 };
