@@ -17,13 +17,13 @@ const theme = createMuiTheme({
       fontSize: "40px",
     },
     h3: {
-      fontSize: "25px",
+      fontSize: "30px",
     },
     h4: {
       fontSize: "20px",
     },
     body1: {
-      fontSize: "15px",
+      fontSize: "16px",
       letterSpacing: "0.1em",
     },
   },
