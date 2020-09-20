@@ -1,16 +1,25 @@
 import React from "react";
-import { Button, Grid } from "@material-ui/core";
+import { Button, Grid, makeStyles } from "@material-ui/core";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 import { Link } from "react-scroll";
 
+const useStyles = makeStyles((theme) => ({
+  button: {
+    ...theme.typography.subtitle1,
+  },
+}));
+
 export const HeaderLinks = () => {
+  const classes = useStyles();
   return (
     <Grid container>
       <Grid container item xs={6} sm={3} justify="center">
         <Button
+          className={classes.button}
+          variant="text"
           component={Link}
           to="about"
           smooth={true}
@@ -25,6 +34,7 @@ export const HeaderLinks = () => {
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
         <Button
+          className={classes.button}
           component={Link}
           to="skills"
           smooth={true}
@@ -39,6 +49,7 @@ export const HeaderLinks = () => {
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
         <Button
+          className={classes.button}
           component={Link}
           to="works"
           smooth={true}
@@ -53,6 +64,7 @@ export const HeaderLinks = () => {
       </Grid>
       <Grid container item xs={6} sm={3} justify="center">
         <Button
+          className={classes.button}
           component={Link}
           to="contact"
           smooth={true}

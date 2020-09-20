@@ -32,12 +32,17 @@ const theme = createMuiTheme({
     },
     h2: {
       fontSize: "40px",
+      fontFamily: "acme",
     },
     h3: {
       fontSize: "30px",
     },
     h4: {
       fontSize: "20px",
+    },
+    subtitle1: {
+      fontSize: "20px",
+      fontFamily: "acme",
     },
     body1: {
       fontSize: "16px",
