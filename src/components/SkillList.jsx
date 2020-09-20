@@ -1,11 +1,9 @@
 import React from "react";
 import { Typography, Box, makeStyles, Paper, Grid } from "@material-ui/core";
 import PropTypes from "prop-types";
-import grey from "@material-ui/core/colors/grey";
 
 const useStyles = makeStyles((theme) => ({
   skillsBox: {
-    backgroundColor: grey[400],
     overflowX: "scroll",
     maxWidth: "530px",
   },

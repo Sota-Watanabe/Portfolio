@@ -12,17 +12,15 @@ import {
   Paper,
   TableCell,
 } from "@material-ui/core";
-import grey from "@material-ui/core/colors/grey";
 
 import { SectionLabel } from "../components/SectionLabel";
 
 const useStyles = makeStyles((theme) => ({
   faceImage: {
-    width: "300px",
-    height: "300px",
+    width: "200px",
+    height: "200px",
   },
   section: {
-    backgroundColor: grey[700],
     padding: "50px 0",
   },
 }));
