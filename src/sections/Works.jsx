@@ -17,7 +17,7 @@ import {
 
 import { SectionLabel } from "../components/SectionLabel";
 import { worksData } from "../data/works/worksData";
-import { WorkDescription } from "../components/WorkDescription";
+import { WorkDetail } from "../components/WorkDetail";
 
 const useStyles = makeStyles((theme) => ({
   workCard: {
@@ -103,7 +103,7 @@ export const Works = () => {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <WorkDescription data={cardDetailData} />
+        <WorkDetail data={cardDetailData} />
         <DialogActions>
           <Button onClick={handleClose}>Close</Button>
         </DialogActions>

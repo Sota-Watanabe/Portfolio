@@ -5,6 +5,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import WebIcon from "@material-ui/icons/Web";
 import { IconLink } from "./IconLink";
+import { DetailHeader } from "./DetailHeader";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -12,17 +13,17 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     marginTop: theme.spacing(2),
-    "&:after": {
-      borderTop: "1px solid",
-      content: '""',
-      width: "1em",
-      marginLeft: "0.5em",
-    },
     "&:before": {
       borderTop: "1px solid",
       content: '""',
-      width: "1em",
-      marginRight: "0.5em",
+      width: "5%",
+      marginRight: "3%",
+    },
+    "&:after": {
+      borderTop: "1px solid",
+      content: '""',
+      width: "5%",
+      marginLeft: "3%",
     },
   },
   heading: {
@@ -36,28 +37,22 @@ export const WorkDetail = ({ data }) => {
   return (
     <Grid container spaceing={1}>
       <Grid item md={6}>
-        <Typography variant="h2" className={classes.title}>
+        <Typography variant="h3" className={classes.title}>
           {data.name}
         </Typography>
         <Box mx={3}>
           <Box my={2}>
-            <Typography variant="h3" className={classes.heading}>
-              Description
-            </Typography>
+            <DetailHeader MainTitle="Description" subTitle="制作物概要" />
             {data.description.split("\n").map((text, index) => {
               return <Typography key={index}>{text}</Typography>;
             })}
           </Box>
           <Box my={2}>
-            <Typography variant="h3" className={classes.heading}>
-              Period
-            </Typography>
+            <DetailHeader MainTitle="Period" subTitle="制作期間" />
             {data.period}
           </Box>
           <Box>
-            <Typography variant="h3" className={classes.heading}>
-              Keyword
-            </Typography>
+            <DetailHeader MainTitle="Keyword" subTitle="使用技術など" />
             {data.labels.map((label) => (
               <Typography display="inline" key={label}>
                 {label}{" "}
