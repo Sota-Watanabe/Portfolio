@@ -49,15 +49,11 @@ export const WorkDetail = ({ data }) => {
           </Box>
           <Box my={2}>
             <DetailHeader MainTitle="Period" subTitle="制作期間" />
-            {data.period}
+            <Typography>{data.period}</Typography>
           </Box>
           <Box>
-            <DetailHeader MainTitle="Keyword" subTitle="使用技術など" />
-            {data.labels.map((label) => (
-              <Typography display="inline" key={label}>
-                {label}{" "}
-              </Typography>
-            ))}
+            <DetailHeader MainTitle="Keyword" subTitle="使用技術" />
+            <Typography>{data.labels.join(" / ")}</Typography>
           </Box>
           <Box my={2} textAlign="center">
             {data.github && (

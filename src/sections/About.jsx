@@ -13,7 +13,7 @@ import {
   TableCell,
 } from "@material-ui/core";
 import { SectionLabel } from "../components/SectionLabel";
-import { AboutLinks } from "./AboutLinks";
+import { AboutLinks } from "../components/AboutLinks";
 
 const useStyles = makeStyles((theme) => ({
   faceImage: {

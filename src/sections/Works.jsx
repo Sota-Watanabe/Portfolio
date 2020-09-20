@@ -10,7 +10,6 @@ import {
   Typography,
   Slide,
   Dialog,
-  Chip,
   DialogActions,
   Button,
 } from "@material-ui/core";
@@ -18,6 +17,7 @@ import {
 import { SectionLabel } from "../components/SectionLabel";
 import { worksData } from "../data/works/worksData";
 import { WorkDetail } from "../components/WorkDetail";
+import { DevelopMethod } from "../components/DevelopMethod";
 
 const useStyles = makeStyles((theme) => ({
   workCard: {
@@ -75,20 +75,11 @@ export const Works = () => {
                 image={`${process.env.PUBLIC_URL}${work.imgPath}`}
                 title={work.name}
               />
-              <CardContent>
+              <CardContent className={classes.cardContent}>
                 <Typography variant="h3" gutterBottom>
                   {work.name}
                 </Typography>
-                <Box>
-                  {work.labels.map((label) => (
-                    <Chip
-                      className={classes.chip}
-                      variant="outlined"
-                      label={label}
-                      key={label}
-                    />
-                  ))}
-                </Box>
+                <DevelopMethod teamDev={work.teamDev} />
               </CardContent>
             </CardActionArea>
           </Card>

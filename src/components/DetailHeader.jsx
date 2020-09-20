@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, makeStyles, Box } from "@material-ui/core";
 import PropTypes from "prop-types";
-import { grey } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subTitle: {
     fontSize: "16px",
-    color: grey[500],
+    color: theme.palette.primary.light,
   },
 }));
 

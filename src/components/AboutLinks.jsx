@@ -3,7 +3,7 @@ import { Grid, Box } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import { IconLink } from "../components/IconLink";
+import { IconLink } from "./IconLink";
 
 export const AboutLinks = () => {
   return (
