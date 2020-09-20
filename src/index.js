@@ -48,6 +48,9 @@ const theme = createMuiTheme({
       fontSize: "16px",
       letterSpacing: "0.1em",
     },
+    body2: {
+      fontSize: "12px",
+    },
   },
 });
 
