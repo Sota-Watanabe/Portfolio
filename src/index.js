@@ -22,7 +22,12 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: ["Noto Sans JP", "sans-serif", "游ゴシック体"].join(","),
+    fontFamily: [
+      "Ramabhadra",
+      "Noto Sans JP",
+      "sans-serif",
+      "游ゴシック体",
+    ].join(","),
     button: {
       textTransform: "none",
     },
@@ -32,7 +37,7 @@ const theme = createMuiTheme({
     },
     h2: {
       fontSize: "40px",
-      fontFamily: "acme",
+      // fontFamily: "acme",
     },
     h3: {
       fontSize: "30px",
@@ -42,7 +47,7 @@ const theme = createMuiTheme({
     },
     subtitle1: {
       fontSize: "20px",
-      fontFamily: "acme",
+      // fontFamily: "acme",
     },
     body1: {
       fontSize: "16px",
