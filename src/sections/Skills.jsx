@@ -1,7 +1,6 @@
 import React from "react";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import { makeStyles, Grid, Box } from "@material-ui/core";
-import grey from "@material-ui/core/colors/grey";
 
 import { SectionLabel } from "../components/SectionLabel";
 import { SkillList } from "../components/SkillList";
@@ -10,9 +9,7 @@ import { backendSkills } from "../data/skills/backendSkills";
 import { infraSkills } from "../data/skills/infraSkills";
 
 const useStyles = makeStyles((theme) => ({
-  stack: {
-    backgroundColor: grey[300],
-  },
+  stack: {},
 }));
 
 export const Skills = () => {

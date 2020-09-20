@@ -11,8 +11,8 @@ export const Main = () => {
   return (
     <>
       <CssBaseline />
-      <Header />
       <KeyVisual />
+      <Header />
       <About />
       <Skills />
       <Works />
