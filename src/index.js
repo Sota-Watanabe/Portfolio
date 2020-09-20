@@ -22,12 +22,8 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: [
-      "Ramabhadra",
-      "Noto Sans JP",
-      "sans-serif",
-      "游ゴシック体",
-    ].join(","),
+    fontFamily: ["Noto Sans JP", "sans-serif", "游ゴシック体"].join(","),
+    fontWeight: "300",
     button: {
       textTransform: "none",
     },
