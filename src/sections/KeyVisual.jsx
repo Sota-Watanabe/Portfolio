@@ -4,7 +4,6 @@ import { Grid, Typography, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
-    color: "black",
   },
 }));
 
@@ -16,10 +15,10 @@ export const KeyVisual = () => {
       alignContent="center"
       alignItems="center"
       justify="center"
+      color="primary"
       className={classes.root}
     >
-      <Typography variant="h1">&nbsp;Sota&nbsp;</Typography>
-      <Typography variant="h1">Watanabe.</Typography>
+      <Typography variant="h1">Sota Watanabe.</Typography>
     </Grid>
   );
 };
