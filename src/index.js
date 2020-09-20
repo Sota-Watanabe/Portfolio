@@ -3,8 +3,24 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { Main } from "./pages/Main";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import { grey, pink } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
+  palette: {
+    type: "light",
+    // type: "dark",
+    primary: {
+      main: grey[50],
+      light: grey[900],
+      dark: pink[300],
+    },
+    secondary: {
+      main: grey[800],
+      dark: grey[900],
+      light: grey[700],
+      black: "black",
+    },
+  },
   typography: {
     fontFamily: ["Noto Sans JP", "sans-serif", "游ゴシック体"].join(","),
     button: {
