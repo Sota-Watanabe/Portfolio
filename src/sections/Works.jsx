@@ -96,6 +96,7 @@ export const Works = () => {
       </Box>
       {/* 以下はポップアップ */}
       <Dialog
+        maxWidth="xl"
         open={openDetail}
         TransitionComponent={Transition}
         keepMounted
