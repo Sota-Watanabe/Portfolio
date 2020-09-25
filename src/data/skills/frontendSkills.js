@@ -1,31 +1,34 @@
 export const frontendSkills = [
   {
-    name: "HTML",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    SkillName: "JavaScript",
+    LearningLevel: 3,
   },
   {
-    name: "css",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    SkillName: "React",
+    LearningLevel: 5,
   },
   {
-    name: "javascript",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    SkillName: "Redux",
+    LearningLevel: 3,
   },
   {
-    name: "React",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    SkillName: "Material-UI",
+    LearningLevel: 4,
   },
   {
-    name: "Material-UI",
-    imgPath: "https://material-ui.com/static/logo_raw.svg",
+    SkillName: "HTML/CSS",
+    LearningLevel: 3,
   },
   {
-    name: "tailwindcss",
-    imgPath:
-      "https://tailwindcss.com/_next/static/media/twitter-square.18b32c43e6fa4c8ee7db66330112a331.png",
+    SkillName: "Tailwind",
+    LearningLevel: 4,
+  },
+  {
+    SkillName: "WordPress",
+    LearningLevel: 4,
+  },
+  {
+    SkillName: "TypeScript",
+    LearningLevel: 1,
   },
 ];

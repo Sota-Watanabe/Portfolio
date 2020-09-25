@@ -1,23 +1,26 @@
 export const backendSkills = [
   {
-    name: "python",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    SkillName: "Python",
+    LearningLevel: 5,
   },
   {
-    name: "flask",
-    imgPath:
-      // "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
-      "https://seeklogo.com/images/F/flask-logo-44C507ABB7-seeklogo.com.png",
+    SkillName: "Flask",
+    LearningLevel: 4,
   },
   {
-    name: "java",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    SkillName: "Java",
+    LearningLevel: 3,
   },
   {
-    name: "go",
-    imgPath:
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
+    SkillName: "Ruby on Rails",
+    LearningLevel: 1,
+  },
+  {
+    SkillName: "Go",
+    LearningLevel: 3,
+  },
+  {
+    SkillName: "Django",
+    LearningLevel: 1,
   },
 ];
