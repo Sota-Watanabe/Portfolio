@@ -3,12 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { Main } from "./pages/Main";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import { grey, pink } from "@material-ui/core/colors";
+import { green, grey, indigo, red } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
     type: "light",
-    // type: "dark",
     primary: {
       main: grey[800],
       dark: grey[900],
@@ -16,9 +15,13 @@ const theme = createMuiTheme({
       black: "black",
     },
     secondary: {
-      main: grey[50],
+      main: red[50],
       light: grey[900],
-      dark: pink[300],
+    },
+    skillRadar: {
+      frontEnd: red[300],
+      backEnd: indigo[300],
+      infra: green[300],
     },
   },
   typography: {

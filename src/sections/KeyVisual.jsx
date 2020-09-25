@@ -57,7 +57,6 @@ export const KeyVisual = () => {
           offset={-100}
           duration={600}
           activeClass="active"
-          size="large"
         >
           <KeyboardArrowDownIcon style={{ fontSize: 50 }} />
         </IconButton>
