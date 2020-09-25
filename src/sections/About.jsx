@@ -29,10 +29,14 @@ export const About = () => {
           src={`${process.env.PUBLIC_URL}/images/face_illust.png`}
           className={classes.faceImage}
         />
-        <Box mx={10} ml={5} width="400px">
-          <DetailHeader MainTitle="Self-Introduction" subTitle="自己紹介" />
+        <Box mx={8} maxWidth="400px">
+          <DetailHeader MainTitle="Who am I ？" subTitle="自己紹介" />
           {aboutData.split("\n").map((text, index) => {
-            return <Typography key={index}>{text}</Typography>;
+            return (
+              <Box key={index} my={4}>
+                <Typography>{text}</Typography>
+              </Box>
+            );
           })}
         </Box>
       </Grid>
