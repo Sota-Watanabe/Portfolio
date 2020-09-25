@@ -6,12 +6,11 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 import PropTypes from "prop-types";
 
-export const SkillRadar = ({ name, data }) => {
+export const SkillRadar = ({ name, data, color }) => {
   return (
     <Box mb={10}>
       <Box mb={3} textAlign="center">
@@ -22,7 +21,6 @@ export const SkillRadar = ({ name, data }) => {
           data={data}
           margin={{ top: 5, right: 50, left: 50, bottom: 5 }}
         >
-          <Legend />
           <PolarGrid />
           <PolarAngleAxis
             style={{ padding: "10px" }}
@@ -39,8 +37,8 @@ export const SkillRadar = ({ name, data }) => {
           <Radar
             name="Skill-Level"
             dataKey="LearningLevel"
-            stroke="primary.main"
-            fill="#8884d8"
+            stroke={color}
+            fill={color}
             fillOpacity={0.3}
           />
           {/* <Tooltip /> */}
@@ -53,4 +51,5 @@ export const SkillRadar = ({ name, data }) => {
 SkillRadar.propTypes = {
   name: PropTypes.string,
   data: PropTypes.array,
+  color: PropTypes.string,
 };
