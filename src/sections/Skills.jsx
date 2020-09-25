@@ -1,32 +1,32 @@
 import React from "react";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
-import { makeStyles, Grid, Box } from "@material-ui/core";
+import { Grid, Box, Container } from "@material-ui/core";
 
 import { SectionLabel } from "../components/SectionLabel";
-import { SkillList } from "../components/SkillList";
+import { SkillRadar } from "../components/SkillRadar";
 import { frontendSkills } from "../data/skills/frontendSkills";
 import { backendSkills } from "../data/skills/backendSkills";
 import { infraSkills } from "../data/skills/infraSkills";
-
-const useStyles = makeStyles((theme) => ({
-  stack: {},
-}));
-
 export const Skills = () => {
-  const classes = useStyles();
   return (
     <Box id="skills">
       <SectionLabel Icon={FitnessCenterIcon} text="SKILLS" />
-      <Grid
-        container
-        justify="center"
-        alignItems="center"
-        className={classes.stack}
-      >
-        <SkillList name="Front-end" list={frontendSkills} />
-        <SkillList name="Back-end" list={backendSkills} />
-        <SkillList name="Infra&amp;DB" list={infraSkills} />
-      </Grid>
+      <Container maxWidth="md">
+        <Grid container>
+          <Grid item sm={6} xs={12}>
+            <SkillRadar name="Front-end" data={frontendSkills} color="pink" />
+          </Grid>
+          <Grid item sm={6} xs={12}>
+            <SkillRadar name="Back-end" data={backendSkills} />
+          </Grid>
+          <Grid item sm={6} xs={12}>
+            <SkillRadar name="Infra&amp;DB" data={infraSkills} />
+          </Grid>
+          <Grid item sm={6} xs={12}>
+            <SkillRadar name="Infra&amp;DB" data={infraSkills} />
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
 };
