@@ -24,10 +24,6 @@ export const frontendSkills = [
     LearningLevel: 4,
   },
   {
-    SkillName: "WordPress",
-    LearningLevel: 4,
-  },
-  {
     SkillName: "TypeScript",
     LearningLevel: 1,
   },
