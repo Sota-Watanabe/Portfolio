@@ -23,6 +23,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: ["Noto Sans JP", "sans-serif", "游ゴシック体"].join(","),
+    lineHeight: "10",
     fontWeight: "300",
     button: {
       textTransform: "none",
@@ -46,6 +47,7 @@ const theme = createMuiTheme({
     body1: {
       fontSize: "16px",
       letterSpacing: "0.1em",
+      lineHeight: 2.0,
     },
     body2: {
       fontSize: "12px",

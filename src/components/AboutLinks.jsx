@@ -7,7 +7,7 @@ import { IconLink } from "./IconLink";
 
 export const AboutLinks = () => {
   return (
-    <Box pb={4}>
+    <Box m={10}>
       <Grid container justify="center">
         <IconLink
           Icon={GitHubIcon}

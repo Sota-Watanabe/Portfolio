@@ -56,7 +56,8 @@ export const Works = () => {
     <Box id="works">
       <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
       <Box
-        m="auto"
+        mx="auto"
+        my={12}
         display="flex"
         flexWrap="wrap"
         justifyContent="center"
