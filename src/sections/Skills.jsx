@@ -15,34 +15,36 @@ export const Skills = () => {
   return (
     <Box id="skills">
       <SectionLabel Icon={FitnessCenterIcon} text="SKILLS" />
-      <Container maxWidth="md">
-        <Grid container>
-          <Grid item sm={6} xs={12}>
-            <SkillRadar
-              name="Front-end"
-              data={frontendSkills}
-              color={theme.palette.skillRadar.frontEnd}
-            />
+      <Box style={{ backgroundColor: "white", paddingTop: theme.spacing(4) }}>
+        <Container maxWidth="md">
+          <Grid container>
+            <Grid item sm={6} xs={12}>
+              <SkillRadar
+                name="Front-end"
+                data={frontendSkills}
+                color={theme.palette.skillRadar.frontEnd}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <SkillRadar
+                name="Back-end"
+                data={backendSkills}
+                color={theme.palette.skillRadar.backEnd}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <SkillRadar
+                name="Infra&amp;DB"
+                data={infraSkills}
+                color={theme.palette.skillRadar.infra}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <SkillRadar name="OS" data={os} />
+            </Grid>
           </Grid>
-          <Grid item sm={6} xs={12}>
-            <SkillRadar
-              name="Back-end"
-              data={backendSkills}
-              color={theme.palette.skillRadar.backEnd}
-            />
-          </Grid>
-          <Grid item sm={6} xs={12}>
-            <SkillRadar
-              name="Infra&amp;DB"
-              data={infraSkills}
-              color={theme.palette.skillRadar.infra}
-            />
-          </Grid>
-          <Grid item sm={6} xs={12}>
-            <SkillRadar name="OS" data={os} />
-          </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Box>
     </Box>
   );
 };
