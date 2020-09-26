@@ -106,9 +106,10 @@ export const Works = () => {
         <Box>
           <Button
             onClick={handleClose}
+            className={classes.closeButton}
             color="primary"
             variant="contained"
-            className={classes.closeButton}
+            style={{ borderRadius: 0 }}
           >
             <Typography variant="h3">CLOSE</Typography>
           </Button>
