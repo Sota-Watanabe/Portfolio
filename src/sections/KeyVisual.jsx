@@ -48,7 +48,7 @@ export const KeyVisual = () => {
       >
         Sota Watanabe.
       </Typography>
-      <Grow in {...{ timeout: 5000 }}>
+      <Grow in {...{ timeout: 3000 }}>
         <IconButton
           className={classes.downIcon}
           component={Link}

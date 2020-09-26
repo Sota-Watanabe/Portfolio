@@ -15,8 +15,7 @@ const theme = createMuiTheme({
       black: "black",
     },
     secondary: {
-      main: red[50],
-      light: grey[900],
+      main: grey[100],
     },
     skillRadar: {
       frontEnd: red[300],

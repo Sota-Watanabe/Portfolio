@@ -12,7 +12,12 @@ export const IconLink = ({ Icon, title, link }) => {
   const classes = useStyles();
   return (
     <Tooltip classes={{ tooltip: classes.customTooltip }} title={title} arrow>
-      <IconButton component="a" href={link} target="_blank">
+      <IconButton
+        style={{ marginTop: "20px", marginBottom: "40px" }}
+        component="a"
+        href={link}
+        target="_blank"
+      >
         <Icon fontSize="large" />
       </IconButton>
     </Tooltip>

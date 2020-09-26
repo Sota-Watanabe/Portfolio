@@ -10,7 +10,6 @@ import {
   Typography,
   Slide,
   Dialog,
-  DialogActions,
   Button,
   Container,
 } from "@material-ui/core";
@@ -30,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
   },
   chip: {
     margin: theme.spacing(0.5),
+  },
+  closeButton: {
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+    width: "100%",
   },
 }));
 
@@ -98,9 +102,18 @@ export const Works = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <WorkDetail data={cardDetailData} />
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
+        {/* safari対応するためBox追加 */}
+        <Box>
+          <Button
+            onClick={handleClose}
+            className={classes.closeButton}
+            color="primary"
+            variant="contained"
+            style={{ borderRadius: 0 }}
+          >
+            <Typography variant="h3">CLOSE</Typography>
+          </Button>
+        </Box>
       </Dialog>
     </Box>
   );
