@@ -27,4 +27,8 @@ export const frontendSkills = [
     SkillName: "TypeScript",
     LearningLevel: 1,
   },
+  {
+    SkillName: "Recharts",
+    LearningLevel: 3,
+  },
 ];

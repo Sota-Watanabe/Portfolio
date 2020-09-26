@@ -11,7 +11,6 @@ import {
   Slide,
   Dialog,
   Button,
-  Container,
 } from "@material-ui/core";
 
 import { SectionLabel } from "../components/SectionLabel";
@@ -60,38 +59,37 @@ export const Works = () => {
   return (
     <Box id="works">
       <SectionLabel Icon={AssignmentTurnedInIcon} text="WORKS" />
-      <Container>
-        <Box
-          mx="auto"
-          my={12}
-          display="flex"
-          flexWrap="wrap"
-          justifyContent="center"
-        >
-          {worksData.map((work, index) => (
-            <Card
-              className={classes.workCard}
-              index={index}
-              key={work.name}
-              onClick={handleClickOpenDetail}
-            >
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={`${process.env.PUBLIC_URL}${work.imgPath}`}
-                  title={work.name}
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography variant="h3" gutterBottom>
-                    {work.name}
-                  </Typography>
-                  <DevelopMethod teamDev={work.teamDev} />
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          ))}
-        </Box>
-      </Container>
+      <Box
+        mx="auto"
+        my={12}
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        maxWidth="1024px"
+      >
+        {worksData.map((work, index) => (
+          <Card
+            className={classes.workCard}
+            index={index}
+            key={work.name}
+            onClick={handleClickOpenDetail}
+          >
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={`${process.env.PUBLIC_URL}${work.imgPath}`}
+                title={work.name}
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography variant="h3" gutterBottom>
+                  {work.name}
+                </Typography>
+                <DevelopMethod teamDev={work.teamDev} />
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        ))}
+      </Box>
       {/* 以下はポップアップ */}
       <Dialog
         maxWidth="xl"

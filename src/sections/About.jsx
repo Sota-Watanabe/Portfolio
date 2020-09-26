@@ -22,14 +22,14 @@ export const About = () => {
         container
         justify="center"
         alignItems="center"
-        className={classes.section}
+        style={{ backgroundColor: "white" }}
       >
         <Avatar
           alt="Sota"
           src={`${process.env.PUBLIC_URL}/images/face_illust.png`}
           className={classes.faceImage}
         />
-        <Box mx={8} maxWidth="400px">
+        <Box mx={8} maxWidth="420px">
           <DetailHeader MainTitle="Who am I ？" subTitle="自己紹介" />
           {aboutData.split("\n").map((text, index) => {
             return (
