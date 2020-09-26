@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
+    width: "100%",
   },
 }));
 
@@ -101,14 +102,17 @@ export const Works = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <WorkDetail data={cardDetailData} />
-        <Button
-          onClick={handleClose}
-          color="primary"
-          variant="contained"
-          className={classes.closeButton}
-        >
-          <Typography variant="h3">CLOSE</Typography>
-        </Button>
+        {/* safari対応するためBox追加 */}
+        <Box>
+          <Button
+            onClick={handleClose}
+            color="primary"
+            variant="contained"
+            className={classes.closeButton}
+          >
+            <Typography variant="h3">CLOSE</Typography>
+          </Button>
+        </Box>
       </Dialog>
     </Box>
   );

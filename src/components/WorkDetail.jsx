@@ -35,46 +35,58 @@ const useStyles = makeStyles((theme) => ({
 export const WorkDetail = ({ data }) => {
   const classes = useStyles();
   return (
-    <Grid container spaceing={1}>
-      <Grid item md={6}>
-        <Typography variant="h3" className={classes.title}>
-          {data.name}
-        </Typography>
-        <Box mx={3}>
-          <Box my={2}>
-            <DetailHeader MainTitle="Description" subTitle="制作物概要" />
-            {data.description.split("\n").map((text, index) => {
-              return <Typography key={index}>{text}</Typography>;
-            })}
-          </Box>
-          <Box my={2}>
-            <DetailHeader MainTitle="Period" subTitle="制作期間" />
-            <Typography>{data.period}</Typography>
-          </Box>
-          <Box>
-            <DetailHeader MainTitle="Keyword" subTitle="使用技術" />
-            <Typography>{data.labels.join(" / ")}</Typography>
-          </Box>
-          <Box my={2} textAlign="center">
-            {data.github && (
-              <IconLink Icon={GitHubIcon} title="GitHub" link={data.github} />
-            )}
+    /* safariに対応するためBoxは必要 */
+    <Box>
+      <Grid container spaceing={1}>
+        <Grid item md={6}>
+          <Typography variant="h3" className={classes.title}>
+            {data.name}
+          </Typography>
+          <Box mx={3}>
+            <Box my={2}>
+              <DetailHeader MainTitle="Description" subTitle="制作物概要" />
+              {data.description.split("\n").map((text, index) => {
+                return <Typography key={index}>{text}</Typography>;
+              })}
+            </Box>
+            <Box my={2}>
+              <DetailHeader MainTitle="Period" subTitle="制作期間" />
+              <Typography>{data.period}</Typography>
+            </Box>
+            <Box>
+              <DetailHeader MainTitle="Keyword" subTitle="使用技術" />
+              <Typography>{data.labels.join(" / ")}</Typography>
+            </Box>
+            <Box my={2} textAlign="center">
+              {data.github && (
+                <IconLink Icon={GitHubIcon} title="GitHub" link={data.github} />
+              )}
 
-            {data.blog && (
-              <IconLink Icon={LibraryBooksIcon} title="Blog" link={data.blog} />
-            )}
-            {data.website && (
-              <IconLink Icon={WebIcon} title="website" link={data.website} />
-            )}
+              {data.blog && (
+                <IconLink
+                  Icon={LibraryBooksIcon}
+                  title="Blog"
+                  link={data.blog}
+                />
+              )}
+              {data.website && (
+                <IconLink Icon={WebIcon} title="website" link={data.website} />
+              )}
+            </Box>
           </Box>
-        </Box>
+        </Grid>
+        <Grid item md={6}>
+          <Box my={10}>
+            <img
+              width="100%"
+              height="auto"
+              src={data.imgPath}
+              alt={data.name}
+            />
+          </Box>
+        </Grid>
       </Grid>
-      <Grid item md={6}>
-        <Box my={10}>
-          <img width="100%" height="auto" src={data.imgPath} alt={data.name} />
-        </Box>
-      </Grid>
-    </Grid>
+    </Box>
   );
 };
 
