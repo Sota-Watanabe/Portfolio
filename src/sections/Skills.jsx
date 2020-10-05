@@ -16,7 +16,7 @@ export const Skills = () => {
   return (
     <Box id="skills">
       <SectionLabel Icon={FitnessCenterIcon} text="SKILLS" />
-      <Box marginX="50px">
+      <Box marginX="20%">
         <Typography variant="body1">
           今まで僕が学んだ技術を紹介します。その際にここでは「スキルレベル」を利用しています。レベルの詳細はプルダウンに記述しておくので気になる方はご覧ください。
         </Typography>
