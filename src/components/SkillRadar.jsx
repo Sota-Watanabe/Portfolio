@@ -7,6 +7,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   ResponsiveContainer,
+  Tooltip,
 } from "recharts";
 import PropTypes from "prop-types";
 
@@ -30,8 +31,8 @@ export const SkillRadar = ({ name, data, color }) => {
           <PolarRadiusAxis
             domain={[0, 5]}
             tickCount={6}
-            tick={false}
-            angle={60}
+            tick={true}
+            angle={90}
             axisLine={false}
           />
           <Radar
@@ -40,8 +41,9 @@ export const SkillRadar = ({ name, data, color }) => {
             stroke={color}
             fill={color}
             fillOpacity={0.3}
+            dot
           />
-          {/* <Tooltip /> */}
+          <Tooltip />
         </RadarChart>
       </ResponsiveContainer>
     </Box>
