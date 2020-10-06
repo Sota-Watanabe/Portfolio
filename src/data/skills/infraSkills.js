@@ -1,9 +1,5 @@
 export const infraSkills = [
   {
-    SkillName: "GitHub",
-    LearningLevel: 4,
-  },
-  {
     SkillName: "Docker",
     LearningLevel: 4,
   },
@@ -17,10 +13,14 @@ export const infraSkills = [
   },
   {
     SkillName: "Knative",
-    LearningLevel: 3,
+    LearningLevel: 4,
   },
   {
     SkillName: "MySQL",
     LearningLevel: 3,
+  },
+  {
+    SkillName: "MongoDB",
+    LearningLevel: 1,
   },
 ];
