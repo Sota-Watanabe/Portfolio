@@ -8,7 +8,7 @@ import { SkillRadar } from "../components/SkillRadar";
 import { frontendSkills } from "../data/skills/frontendSkills";
 import { backendSkills } from "../data/skills/backendSkills";
 import { infraSkills } from "../data/skills/infraSkills";
-import { os } from "../data/skills/os";
+import { devOps } from "../data/skills/devOps";
 import { SkillLevelDescription } from "../components/SkillLevelDescription";
 
 export const Skills = () => {
@@ -47,7 +47,11 @@ export const Skills = () => {
               />
             </Grid>
             <Grid item sm={6} xs={12}>
-              <SkillRadar name="OS" data={os} />
+              <SkillRadar
+                name="DevOps"
+                data={devOps}
+                color={theme.palette.skillRadar.devOps}
+              />
             </Grid>
           </Grid>
         </Container>
