@@ -23,7 +23,7 @@ export const SkillLevelDescription = () => {
         >
           Skill Level
         </Typography>
-        {skillLevelDescription.map((description) => {
+        {skillLevelDescription.map((description, index) => {
           return (
             <Accordion key={description.SkillLevel}>
               <AccordionSummary
@@ -31,8 +31,14 @@ export const SkillLevelDescription = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Container maxWidth="xs">
-                  <Typography>{description.SkillLevel}</Typography>
+                <Container
+                  maxWidth="xs"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <description.Icon style={{ marginRight: "20px" }} />
+                  <Typography display="inline">
+                    {description.SkillLevel}
+                  </Typography>
                 </Container>
               </AccordionSummary>
               <AccordionDetails>
