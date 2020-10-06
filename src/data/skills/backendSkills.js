@@ -1,11 +1,11 @@
 export const backendSkills = [
   {
     SkillName: "Python",
-    LearningLevel: 5,
+    LearningLevel: 4,
   },
   {
     SkillName: "Flask",
-    LearningLevel: 4,
+    LearningLevel: 3,
   },
   {
     SkillName: "Java",
@@ -21,6 +21,6 @@ export const backendSkills = [
   },
   {
     SkillName: "Django",
-    LearningLevel: 1,
+    LearningLevel: 2,
   },
 ];
