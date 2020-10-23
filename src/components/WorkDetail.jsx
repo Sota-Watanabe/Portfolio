@@ -65,7 +65,11 @@ export const WorkDetail = ({ data }) => {
       <Box my={2}>
         <DetailHeader MainTitle="Description" subTitle="制作物概要" />
         {data.description.split("\n").map((text, index) => {
-          return <Typography key={index}>{text}</Typography>;
+          return (
+            <Box key={index} my={4}>
+              <Typography key={index}>{text}</Typography>
+            </Box>
+          );
         })}
       </Box>
       <Grid container spaceing={1} alignItems="center">
