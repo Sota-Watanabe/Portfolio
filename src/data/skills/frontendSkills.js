@@ -27,4 +27,12 @@ export const frontendSkills = [
     SkillName: "TypeScript",
     LearningLevel: 1,
   },
+  {
+    SkillName: "Vue.js",
+    LearningLevel: 2,
+  },
+  {
+    SkillName: "Vuetify",
+    LearningLevel: 2,
+  },
 ];
