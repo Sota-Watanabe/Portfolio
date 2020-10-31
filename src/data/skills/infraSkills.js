@@ -16,6 +16,10 @@ export const infraSkills = [
     LearningLevel: 4,
   },
   {
+    SkillName: "Electron",
+    LearningLevel: 2,
+  },
+  {
     SkillName: "MySQL",
     LearningLevel: 3,
   },
