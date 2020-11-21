@@ -21,6 +21,7 @@ const theme = createMuiTheme({
       frontEnd: red[300],
       backEnd: indigo[300],
       infra: green[300],
+      devOps: grey[900],
     },
   },
   typography: {

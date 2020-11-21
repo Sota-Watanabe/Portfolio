@@ -5,7 +5,7 @@ export const frontendSkills = [
   },
   {
     SkillName: "React",
-    LearningLevel: 5,
+    LearningLevel: 4,
   },
   {
     SkillName: "Redux",
@@ -28,7 +28,11 @@ export const frontendSkills = [
     LearningLevel: 1,
   },
   {
-    SkillName: "Recharts",
-    LearningLevel: 3,
+    SkillName: "Vue.js",
+    LearningLevel: 2,
+  },
+  {
+    SkillName: "Vuetify",
+    LearningLevel: 2,
   },
 ];
