@@ -9,11 +9,11 @@ export const backendSkills = [
   },
   {
     SkillName: "Java",
-    LearningLevel: 3,
+    LearningLevel: 2.5,
   },
   {
     SkillName: "Ruby on Rails",
-    LearningLevel: 1,
+    LearningLevel: 2.5,
   },
   {
     SkillName: "Go",

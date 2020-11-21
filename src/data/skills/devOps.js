@@ -12,6 +12,14 @@ export const devOps = [
     LearningLevel: 2,
   },
   {
+    SkillName: "Swagger",
+    LearningLevel: 2.5,
+  },
+  {
+    SkillName: "dbdiagram.io",
+    LearningLevel: 3,
+  },
+  {
     SkillName: "Linux",
     LearningLevel: 4,
   },
