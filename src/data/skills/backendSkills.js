@@ -13,7 +13,7 @@ export const backendSkills = [
   },
   {
     SkillName: "Ruby on Rails",
-    LearningLevel: 2.5,
+    LearningLevel: 3.5,
   },
   {
     SkillName: "Go",

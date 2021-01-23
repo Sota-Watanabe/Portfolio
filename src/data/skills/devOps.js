@@ -9,11 +9,15 @@ export const devOps = [
   },
   {
     SkillName: "Postman",
-    LearningLevel: 2,
+    LearningLevel: 3,
+  },
+  {
+    SkillName: "RSpec",
+    LearningLevel: 3,
   },
   {
     SkillName: "Swagger",
-    LearningLevel: 2.5,
+    LearningLevel: 3,
   },
   {
     SkillName: "dbdiagram.io",
